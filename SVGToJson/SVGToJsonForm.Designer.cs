@@ -33,6 +33,7 @@
             this.txtPath = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnOpenFile = new System.Windows.Forms.Button();
+            this.Chk_ExportColor = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // btnSave
@@ -71,11 +72,22 @@
             this.btnOpenFile.UseVisualStyleBackColor = true;
             this.btnOpenFile.Click += new System.EventHandler(this.btnOpenFile_Click);
             // 
+            // Chk_ExportColor
+            // 
+            this.Chk_ExportColor.AutoSize = true;
+            this.Chk_ExportColor.Location = new System.Drawing.Point(15, 60);
+            this.Chk_ExportColor.Name = "Chk_ExportColor";
+            this.Chk_ExportColor.Size = new System.Drawing.Size(94, 16);
+            this.Chk_ExportColor.TabIndex = 4;
+            this.Chk_ExportColor.Text = "Export Color";
+            this.Chk_ExportColor.UseVisualStyleBackColor = true;
+            // 
             // SVGToJsonForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 96);
+            this.Controls.Add(this.Chk_ExportColor);
             this.Controls.Add(this.btnOpenFile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPath);
@@ -96,6 +108,7 @@
         private System.Windows.Forms.TextBox txtPath;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnOpenFile;
+        private System.Windows.Forms.CheckBox Chk_ExportColor;
     }
 }
 
